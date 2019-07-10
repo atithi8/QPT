@@ -134,6 +134,7 @@
 
 \newcommand{\va}[0]{\vect{a}}
 \newcommand{\vb}[0]{\vect{b}}
+\newcommand{\vC}[0]{\vect{c}}
 \newcommand{\vc}[0]{\vect{c}}
 \newcommand{\vh}[0]{\vect{h}}
 \newcommand{\vv}[0]{\vect{v}}
@@ -152,6 +153,8 @@
 \newcommand{\vp}[0]{\vect{p}}
 \newcommand{\mW}[0]{\matr{W}}
 \newcommand{\mU}[0]{\matr{U}}
+\newcommand{\mC}[0]{\matr{C}}
+\newcommand{\mV}[0]{\matr{V}}
 
 \title{Quantum Process Tomography\\}
 
@@ -338,7 +341,7 @@ where
     \right)
 \end{align*}
 and $e(\vy_{0})$ is an all-zero vector. Similarly to the case of
-the encoder, $e(\vy)$ is an embedding of a target word.
+the encoder, $e(\vy)$ is an embedding of a target word. $\mW, \mU, \mV, \mC$ are all weight matrices. The $\mC$ matrix used enables us to use the representation we gained by encoding the source phrase.
 
 Unlike the encoder which simply encodes the source phrase, the
 decoder is learned to generate a target phrase or give us the probability to go to a specific target phrase given we started with an input phrase. At each time $t$,
